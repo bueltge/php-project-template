@@ -1,0 +1,35 @@
+{
+    "name": "bueltge/MYPROJECT",
+    "description": "Leave a nice description.",
+    "license": "MIT",
+    "keywords": [],
+    "authors": [
+        {
+            "name": "Frank Bültge",
+            "email": "frank@bueltge.de"
+        }
+    ],
+    "require": {
+        "php": ">=7",
+        "psr/log": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "inpsyde/php-coding-standards": "^0.13",
+        "squizlabs/php_codesniffer": "~3.2.3",
+        "dg/composer-cleaner": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bueltge\\MYPROJECT\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bueltge\\MYPROJECT\\Tests\\Unit\\": "tests/phpunit/Unit/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
